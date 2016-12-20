@@ -1,0 +1,113 @@
+body {
+  background-color: #efefef;
+}
+.header {
+  display: flex;
+  height: 50px;
+  background-color: #fff;
+  position: relative;
+}
+.header:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #e1e1e1;
+}
+.icon-back {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../../img/nav_icon_back@2x.png") no-repeat center;
+  background-size: 25%;
+}
+.header_title {
+  flex: 1;
+  padding-right: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-family: "Arial", " Heiti SC", "宋体", sans-serif;
+  font-size: 18px;
+}
+.link_cell_one {
+  position: relative;
+  height: 50px;
+  padding-left: 15px;
+  background-color: #fff;
+  line-height: 50px;
+  margin-top: 10px;
+  font-family: "Arial", " Heiti SC", "宋体", sans-serif;
+}
+.link_cell_one #div1 {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 50px;
+  height: 30px;
+  border-radius: 50px;
+}
+.link_cell_one #div2 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 48px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+.link_cell_one .link-off {
+  background: #ea5404;
+}
+.link_cell_one .link-on {
+  background: #ea5404;
+}
+.link_cell_one .close1 {
+  background: rgba(200,200,200,0.4);
+  border: 1px solid rgba(0,0,0,0.15);
+  border-left: transparent;
+}
+.link_cell_one .close2 {
+  right: 0;
+  top: 0;
+}
+.link_cell {
+  position: relative;
+  height: 50px;
+  padding-left: 15px;
+  background-color: #fff;
+  line-height: 50px;
+  margin-top: 10px;
+  font-family: "Arial", " Heiti SC", "宋体", sans-serif;
+}
+.link_cell:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  dispaly: block;
+  width: 16px;
+  height: 30px;
+  margin-top: -15px;
+  background: url("../../img/content_list_right_icon@2x.png") no-repeat right center;
+  background-size: 50%;
+}
+.link_cell .link_box {
+  position: absolute;
+  font-size: 14px;
+  color: #727272;
+  font-family: "Arial", " Heiti SC", "宋体", sans-serif;
+  right: 30px;
+}
+.link_cells {
+  position: relative;
+  height: 50px;
+  background-color: #fff;
+  line-height: 50px;
+  margin-top: 25px;
+  text-align: center;
+  font-family: "Arial", " Heiti SC", "宋体", sans-serif;
+}

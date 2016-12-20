@@ -1,0 +1,38 @@
+.md {
+  width: 500px;
+  height: 300px;
+  background: #ff0;
+  color: #4d51ea;
+  font-size: 12px;
+}
+:after {
+  content: '1';
+}
+:before {
+  content: '0';
+}
+@media all and (min-width: 800px) {
+  body {
+    background: #000;
+  }
+}
+@media (max-width: 800px) and (min-width: 600px) {
+  body {
+    background: #f00;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    background: #0ff;
+  }
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+  .md {
+    font-size: 30px;
+  }
+}
+@media (max-width: 800px), (min-width: 1000px) {
+  .md {
+    font-size: 50px;
+  }
+}

@@ -1,0 +1,166 @@
+* {
+  outline: none;
+}
+body {
+  background-color: #efefef;
+  font-family: SimHei;
+}
+.header {
+  height: 35px;
+  background-color: #fff;
+  line-height: 35px;
+}
+.header .icon-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: url("../../img/nav_icon_back@2x.png") no-repeat center;
+  background-size: 12px 18px;
+}
+.header .header_title {
+  display: inline-block;
+  width: 100%;
+  color: #ed692b;
+  text-align: center;
+}
+.form-list {
+  margin-top: 15px;
+  padding-right: 15px;
+  background: #fff;
+}
+.form-list .form-cell {
+  position: relative;
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+}
+.form-list .form-cell-name {
+  display: inline-block;
+  padding-left: 40px;
+}
+.form-list .form-cell-name.cell-name {
+  width: 60px;
+  background: url("../../img/content_ID_icon@2x.png") no-repeat left 10px center;
+  background-size: 20px 50%;
+}
+.form-list .form-cell-name.cell-code {
+  width: 68px;
+  background: url("../../img/content_verify_icon@2x.png") no-repeat left 12px center;
+  background-size: 15px 50%;
+}
+.form-list .form-cell-name.cell-passwd {
+  background: url("../../img/content_password_icon@2x.png") no-repeat left 12px center;
+  background-size: 16px 50%;
+}
+.form-list .form-cell-name.cell-status {
+  background: url("../../img/content_position_icon@2x.png") no-repeat left 12px center;
+  background-size: 20px 50%;
+}
+.form-list .form-cell-name.cell-next {
+  background: url("../../img/content_icon02_nor@2x.png") no-repeat right center;
+  background-size: 14px 8px;
+}
+.form-list .form-cell .select-list {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 5;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  background-color: #efefef;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.form-list .form-cell .select-list .select-li {
+  position: relative;
+  height: 40px;
+  padding: 0 10px;
+  line-height: 40px;
+}
+.form-list .form-cell .select-list .select-li:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 10px;
+  display: block;
+  height: 1px;
+  background-color: #cecece;
+}
+.form-list .form-cell .select-list .select-li:last-child:after {
+  display: none;
+}
+.form-list .form-cell .form-cell-input {
+  flex: 1;
+}
+.form-list .form-cell .form-cell-input .fci-input {
+  height: 38px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.form-list .form-cell:after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 10px;
+  z-index: 5;
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #efefef;
+}
+.fci-box {
+  display: flex;
+}
+.fci-box .input-box {
+  display: block;
+  flex: 1;
+}
+.fci-box .input-box .code_input {
+  width: 100%;
+  height: 38px;
+  border: none;
+}
+.fci-box .btn_code {
+  width: 5rem;
+  height: 14px;
+  margin-top: 9px;
+  padding: 4px 6px;
+  border-radius: 5px;
+  background-color: #ed692b;
+  color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+.bt_box {
+  height: 40px;
+  margin-top: 20px;
+  padding: 0 15px;
+}
+.bt_box .btn_login {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c7c7c7;
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 40px;
+}
+.bt_box .bt-reg {
+  color: #7a7a7c;
+  font-size: 12px;
+  margin-left: 70px;
+}
+.bt_box .bt-passwd {
+  color: #ed692b;
+  font-size: 12px;
+}

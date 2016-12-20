@@ -1,0 +1,1 @@
+$(".end_one").on("tap",function(){var e=$(this);$(".one");e.hasClass("active_one")?(e.removeClass("active_one").addClass("end_one"),$(".end_texts").addClass("one")):(e.removeClass("end_one").addClass("active_one"),$(".end_texts").removeClass("one"))});

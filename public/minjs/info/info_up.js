@@ -1,0 +1,1 @@
+window.onload=function(){var e=document.getElementById("div2"),c=document.getElementById("div1");e.onclick=function(){c.className="close1"==c.className?"link-off":"close1",e.className="close2"==e.className?"link-on":"close2"}};

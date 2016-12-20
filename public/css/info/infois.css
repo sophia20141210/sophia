@@ -1,0 +1,98 @@
+body {
+  background-color: #efefef;
+}
+.header {
+  display: flex;
+  height: 50px;
+  background-color: #fff;
+  position: relative;
+}
+.header:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #e1e1e1;
+}
+.icon-back {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../../img/nav_icon_back@2x.png") no-repeat center;
+  background-size: 25%;
+}
+.header_title {
+  flex: 1;
+  padding-right: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-family: "Arial", " Heiti SC", "宋体", sans-serif;
+}
+.info-cells {
+  margin-top: 20px;
+  background-color: #fff;
+}
+.info-cell {
+  display: flex;
+  padding: 0 15px;
+  line-height: 40px;
+  position: relative;
+}
+.info-cell:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 0;
+  z-index: 5;
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #e1e1e1;
+}
+.info-name {
+  flex: 3;
+  font-size: 0.875em;
+  color: #646464;
+}
+.info-contents {
+  flex: 4;
+  padding: 0;
+  background: url("../../img/log in_user-head@2x.png") no-repeat left 15px center;
+  background-size: 30px 30px;
+  border-radius: 50%;
+}
+.info-content {
+  flex: 4;
+  text-indent: 10px;
+  font-family: "Arial", " Heiti SC", "宋体", sans-serif;
+}
+.info-img {
+  flex: 1;
+  background: url("../../img/content_list_right_icon@2x.png") no-repeat left 27px center;
+  background-size: 12px 20px;
+}
+.image-cell {
+  display: flex;
+  height: 110px;
+  background-color: #fff;
+}
+.image-block {
+  flex: 1;
+  height: 60px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 15px;
+  background-color: #878787;
+}
+.image-block .title {
+  font-size: 12px;
+  color: #646464;
+  text-align: center;
+  margin-top: 70px;
+}

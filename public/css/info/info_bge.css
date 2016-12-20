@@ -1,0 +1,130 @@
+body {
+  background-color: #efefef;
+}
+.header {
+  display: flex;
+  height: 50px;
+  background-color: #fff;
+  position: relative;
+}
+.header:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #e1e1e1;
+}
+.icon-back {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../../img/nav_icon_back@2x.png") no-repeat center;
+  background-size: 25%;
+}
+.header_title {
+  flex: 1;
+  padding-right: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-family: "Arial", " Heiti SC", "宋体", sans-serif;
+}
+.list-ul {
+  overflow: hidden;
+  list-style: none;
+}
+.list-li {
+  position: relative;
+  -webkit-transform: translateX(0px);
+}
+.btn {
+  position: absolute;
+  text-align: center;
+  color: #ea5404;
+  width: 80px;
+  right: 0;
+  top: 47px;
+  z-index: 1;
+}
+.block_box {
+  position: relative;
+  display: flex;
+  padding: 15px;
+  background-color: #fff;
+  margin-top: 5px;
+  margin-left: -40px;
+  z-index: 10;
+}
+.block_box {
+  position: relative;
+  display: flex;
+  padding: 15px;
+  background-color: #fff;
+  margin-top: 5px;
+  margin-left: -40px;
+  z-index: 10;
+}
+.block_box .img_box {
+  flex: 3;
+  background: url("../../img/content_img_list@2x.png") no-repeat center;
+  background-size: 100%;
+}
+.block_box .info_box {
+  flex: 5;
+  margin-left: 15px;
+}
+.block_box .info_box .info-title {
+  position: relative;
+  font-size: 16px;
+}
+.block_box .info_box .info-title .active-info {
+  width: 30px;
+  height: 18px;
+  position: absolute;
+  background: url("../../img/collect_icon_press@2x.png") no-repeat center;
+  background-size: 60%;
+  right: 0px;
+}
+.block_box .info_box .info-address {
+  font-size: 14px;
+  color: #7f7f7f;
+  padding-top: 5px;
+}
+.block_box .info_box .info-tag_box {
+  border: 1px solid #ea5404;
+  border-radius: 5px;
+  color: #ea5404;
+  width: 60px;
+  height: 15px;
+  line-height: 12px;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+.block_box .info_box .info-tag_box .info-info {
+  margin-left: 6px;
+  text-align: center;
+  font-size: 12px;
+}
+.block_box .info_box .info-price {
+  font-size: 12px;
+  position: relative;
+  margin-top: 5px;
+  color: #727272;
+}
+.block_box .info_box .info-price .info-text {
+  font-style: normal;
+  font-size: 14px;
+  color: #ea5404;
+}
+.block_box .info_box .info-price .info-boss {
+  position: absolute;
+  right: 0;
+  color: #727272;
+}
+.down-box {
+  display: none;
+}

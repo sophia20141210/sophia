@@ -1,0 +1,1 @@
+var $selectTitle=$(".form-cell-input"),$selectList=$(".select-list");$selectTitle.on("tap",function(){$(this).siblings(".select-list").toggle()}),$selectList.find(".select-li").on("tap",function(){var t=$(this),e=t.parent(".select-list"),l=t.text(),i=t.data("val");console.log(l,i),e.siblings(".form-cell-input").text(l).data("val",i),e.hide()});
