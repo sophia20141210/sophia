@@ -1,24 +1,31 @@
 /**
  * Created by Administrator on 2016/12/19 0019.
  */
+
 window.addEventListener('load', function() {
     var initX; //触摸位置
     var moveX; //滑动时的位置
     var X = 0; //移动距离
     var objX = 0; //目标对象位置
     window.addEventListener('touchstart', function(event) {
+       // window.history.go(-1)
         event.preventDefault();
         var obj = event.target.parentNode;
+        var obji=event.target;
+        console.log(obji.className)
+        if(obji.className=="icon-back"){
+            window.location.href='info.html'
+        }
         if (obj.className == "block_box") {
             initX = event.targetTouches[0].pageX;
-            console.log(event.targetTouches[0])
+           console.log(event.targetTouches[0])
             objX = (obj.style.WebkitTransform.replace(/translateX\(/g, "").replace(/px\)/g, "")) * 1;
         }
         if (objX == 0) {
             window.addEventListener('touchmove', function(event) {
                 event.preventDefault();
                 var obj = event.target.parentNode;
-                console.log(obj)
+                //console.log(obj)
                 if (obj.className == "block_box") {
                     moveX = event.targetTouches[0].pageX;
                     X = moveX - initX;
@@ -70,4 +77,5 @@ window.addEventListener('load', function() {
             }
         }
     })
+
 });

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,22 +12,32 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="//cdn.bootcss.com/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="../../public/css/info/info-oh.css">
+    <link rel="stylesheet" href="../../public/css/info/info_xu.css">
 </head>
 <body>
 <header class="header">
-    <i class="icon-back" onclick="location='info.html'"></i>
-    <span class="header_title">我发布的需求</span>
+    <i class="icon-back"></i>
+    <span class="header_title">收藏</span>
 </header>
+<div class="s_box">
+    <div class="s_right"><span class="s_txt">需求</span></div>
+    <div class="s_left" onclick="location='info_shou.html'"><span class="s_txt">房源</span></div>
+</div>
 <article class="demand_cells">
     <section class="demand_cell">
-        <header class="demand-title"><span class="d-t-name">一个新的租房需求</span><em class="text-time">08/04/13:06</em></header>
+        <header class="demand-title"><span class="d-t-name">一个新的租房需求</span><i class="d-t-tag-a">租户</i></header>
         <p class="demand-info">需求为：外滩SOHO，200平米写字楼，简装带家私，租金8元/m^/天左右，附近有地铁</p>
-        <footer class="demand-footer"><span class="btn-detail">了解详情</span></footer>
+        <footer class="demand-footer"><em class="text-time"></em><span class="btn-detail">了解详情</span><em class="text-time">08/04/13:06</em></footer>
+    </section>
+
+    <section class="demand_cell">
+        <header class="demand-title"><span class="d-t-name">一个新的租房需求</span><i class="d-t-tag-b">经纪人</i></header>
+        <p class="demand-info">需求为：外滩SOHO，200平米写字楼，简装带家私，租金8元/m^/天左右，附近有地铁</p>
+        <footer class="demand-footer"><em class="text-time"></em><span class="btn-detail">了解详情</span><em class="text-time">08/04/13:06</em></footer>
     </section>
 </article>
-</body>
 <script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
 <script src="../../public/libs/zepto/touch.js"></script>
-<script src="../../public/js/msg/msg_demand.js"></script>
+<script src="../../public/js/info/info_shou.js"></script>
+</body>
 </html>
