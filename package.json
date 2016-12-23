@@ -9,6 +9,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "http-proxy-middleware": "^0.17.3"
+  },
+  "dependencies": {
+    "sha1": "^1.1.1"
   }
 }

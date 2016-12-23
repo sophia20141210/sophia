@@ -14,7 +14,7 @@ window.addEventListener('load', function() {
         var obji=event.target;
         console.log(obji.className)
         if(obji.className=="icon-back"){
-            window.location.href='info.html'
+            window.location.href='info_fone.html'
         }
         if (obj.className == "block_box") {
             initX = event.targetTouches[0].pageX;
