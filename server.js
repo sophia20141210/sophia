@@ -74,18 +74,4 @@ app.listen(16934, function(){
 //模块导出
 module.exports=app;
 
-//定义通过 /api 访问的请求，转发到指定路径
-app.use('/api',proxy({
-    target:'http://guanjp.com:9805',
-    changeOrigin:true,
-    ws:true,
-    cookieRewrite:true,
-    pathRewrite:{
-        '^/api':'/'
-    }
-}));
-// http://127.0.0.1:9888/api/index
-// 替换为http://122.10.30.153:9901/index
 
-console.log(__dirname);
-console.log(__filename);

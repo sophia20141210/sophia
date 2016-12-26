@@ -1,18 +1,29 @@
 {
   "name": "12.8",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "* 下载\r     ``` \r      git clone git@code.aliyun.com:task2016/project_wang.git\r     ```\r * 进入目录\r     ``` \r      cd project_wang\r     ```\r * 安装依赖\r     ``` \r      npm install \r     ```\r * 启动项目\r     ``` \r      node app.js\r     ```\r * 监听\r     ``` \r      gulp watcher\r     ```\r * 访问\r     ``` \r      http://127.0.0.1:16927\r     ```",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.0.0",
     "http-proxy-middleware": "^0.17.3"
   },
   "dependencies": {
+    "browser-sync": "^2.18.5",
+    "express": "^4.14.0",
+    "http-proxy-middleware": "^0.17.3",
+    "jssha": "^2.2.0",
+    "nodegrass": "0.0.3",
     "sha1": "^1.1.1"
   }
 }
